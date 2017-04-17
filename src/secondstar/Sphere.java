@@ -4,8 +4,14 @@ import secondstar.BendaAngkasa;
 
 /**
  *
- * @author Aurelia
+ * @author Jacqueline
  */
-public class Sphere implements BendaAngkasa {
-
+public abstract class Sphere implements BendaAngkasa {
+	
+	public Sphere() {
+		super();
+	}
+	
+	public abstract void spawn();
+	
 }

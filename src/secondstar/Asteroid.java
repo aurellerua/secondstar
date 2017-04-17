@@ -2,8 +2,14 @@ package secondstar;
 
 /**
  *
- * @author Aurelia
+ * @author Jacqueline
  */
 public class Asteroid implements BendaAngkasa {
-
+	
+	public Asteroid() {
+		super();
+	}
+	
+	public abstract void spawn();
+	
 }
