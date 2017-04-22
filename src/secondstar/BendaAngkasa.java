@@ -11,10 +11,10 @@ package secondstar;
  * @author Jacqueline
  */
 public interface BendaAngkasa {
-    protected char warna;
+    /*protected char warna;
     protected int kecepatan;
     protected boolean isActive;
-    protected int score;
+    protected int score;*/
     
     public void spawn();
 }

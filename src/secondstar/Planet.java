@@ -7,8 +7,8 @@ package secondstar;
 public class Planet extends Sphere {
 	
 	public Planet() {
-		super();
-		warna = h; //hijau
+		//super();
+		warna = 'h'; //hijau
 		kecepatan = 10;
 		isActive = false;
 		score = -20;

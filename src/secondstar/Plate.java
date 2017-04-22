@@ -2,8 +2,10 @@ package secondstar;
 
 /**
  *
- * @author Aurelia
+ * @author Jacqueline
  */
-public class Plate {
+public abstract class Plate {
+	
+	protected int size;
 
 }

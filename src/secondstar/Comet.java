@@ -7,7 +7,7 @@ package secondstar;
 public class Comet extends Asteroid {
 	
 	public Comet() {
-		super();
+		//super();
 		warna = m; //merah
 		kecepatan = 100;
 		isActive = false;

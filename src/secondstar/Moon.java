@@ -7,7 +7,7 @@ package secondstar;
 public class Moon extends Sphere {
 	
 	public Moon() {
-		super();
+		//super();
 		warna = k; //kuning
 		kecepatan = 10;
 		isActive = false;

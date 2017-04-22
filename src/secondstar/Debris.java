@@ -7,7 +7,7 @@ package secondstar;
 public class Debris extends Asteroid {
 	
 	public Debris() {
-		super();
+		//super();
 		warna = p; //putih
 		kecepatan = 50;
 		isActive = false;
