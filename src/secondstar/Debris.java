@@ -8,7 +8,7 @@ public class Debris extends Asteroid {
 	
 	public Debris() {
 		//super();
-		warna = p; //putih
+		warna = 'p'; //putih
 		kecepatan = 50;
 		isActive = false;
 		score = -10;

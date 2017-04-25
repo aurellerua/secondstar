@@ -8,7 +8,7 @@ public class Comet extends Asteroid {
 	
 	public Comet() {
 		//super();
-		warna = m; //merah
+		warna = 'm'; //merah
 		kecepatan = 100;
 		isActive = false;
 		score = 70;

@@ -8,7 +8,7 @@ public class Moon extends Sphere {
 	
 	public Moon() {
 		//super();
-		warna = k; //kuning
+		warna = 'k'; //kuning
 		kecepatan = 10;
 		isActive = false;
 		score = 30;
