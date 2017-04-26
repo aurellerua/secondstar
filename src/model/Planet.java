@@ -6,6 +6,10 @@ package model;
  */
 public class Planet extends Sphere {
 	
+	/**
+	 * Konstruktor Planet
+	 * Menciptakan objek Planet dan mengisi atributnya
+	 */
 	public Planet() {
 		//super();
 		warna = 'h'; //hijau
@@ -14,6 +18,9 @@ public class Planet extends Sphere {
 		score = -20;
 	}
 	
+	/**
+	 * Memberi tanda objek Planet aktif
+	 */
 	public void spawn() {
 		isActive = true;
 	}

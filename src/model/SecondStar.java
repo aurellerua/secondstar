@@ -13,7 +13,7 @@ package model;
 public class SecondStar {
 
     /**
-     * @param args the command line arguments
+     * Main untuk Second Star
      */
     public static void main(String[] args) {
         // TODO code application logic here

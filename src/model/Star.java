@@ -13,6 +13,10 @@ public class Star implements BendaAngkasa {
     protected boolean isActive;
     protected int score;
 	
+	/**
+	 * Konstruktor Star
+	 * Menciptakan objek Star dan mengisi atributnya
+	 */
 	public Star() {
 		//super();
 		warna = 'b'; //biru
@@ -21,6 +25,9 @@ public class Star implements BendaAngkasa {
 		score = 50;
 	}
 	
+	/**
+	 * Memberi tanda objek Star aktif
+	 */
 	public void spawn() {
 		isActive = true;
 	}
