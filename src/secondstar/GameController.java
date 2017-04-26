@@ -10,49 +10,59 @@ import java.util.Random;
  */
 public class GameController extends JPanel {
     
-    static int windowWidth = 1300;
-    static int windowHeight = 800;
+    private static final int windowWidth = 1300;
+    private static final int windowHeight = 800;
+    private static final int squareWidth = 25;
+    private static final int squareHeight = 25;
     
-    int randomNumber = 0;
-    int squareWidth = 25;
-    int squareHeight = 25;
-    int squareYLocation = -squareHeight;
-    boolean numberCreated = false;
-    static boolean gameRunning = false;
+    private int randomNumber = 0;
+    private int squareYLocation = -squareHeight;
+    private boolean numberCreated = false;
+    private static boolean gameRunning = false;
     
-    // get spawn location
+    Random r = new Random();
+    
+    /**
+  * method to get random number
+  */
     public void getRandomNumber() {
-        Random r = new Random();
         randomNumber = r.nextInt(windowWidth - squareWidth);
         numberCreated = true;
     }
     
-        //paints a black screen, then paints a rectangle on top of the black screen
-    public void paint(Graphics g) {
-        g.setColor(Color.black);
-        g.fillRect(0, 0, windowWidth, windowHeight);
-        g.setColor(Color.BLUE);
-        g.fillRect(randomNumber, squareYLocation, squareWidth, squareHeight);
+    /**
+  * Paint a black screen and blue rectangle 
+  * @param graphics 
+  */
+    public void paint(Graphics graphics) {
+        graphics.setColor(Color.black);
+        graphics.fillRect(0, 0, windowWidth, windowHeight);
+        graphics.setColor(Color.BLUE);
+        graphics.fillRect(randomNumber, squareYLocation, squareWidth, squareHeight);
     }
-
+    
+    /**
+  * Get random number for x value of the object, then move it y coordinate towards the bottom and stop once it hits the botton 
+  * Reset after done 
+  */
     public void update() {
 
-        //calls the generateRandomNumber() method which gives the square a random x value inside the screen
         if (!numberCreated) {
             getRandomNumber();
         }
-        //moves the squares y coordinate towards the bottom of the screen and stops once it hits the bottom
+        
         if (squareYLocation <= windowHeight) {
             squareYLocation++;
 
-            //resets the x and y location to a new position
         } else {
             numberCreated = false;
             squareYLocation = -squareHeight;
         }
     }
 
-    //sets the while loop to true to start the game
+    /**
+  * Method to start the game.
+  */
     public void start() {
         gameRunning = true;
     }

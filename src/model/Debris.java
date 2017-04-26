@@ -1,4 +1,4 @@
-package secondstar;
+package model;
 
 /**
  *

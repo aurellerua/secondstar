@@ -1,17 +1,19 @@
-package secondstar;
+package model;
+
+//import secondstar.BendaAngkasa;
 
 /**
  *
  * @author Jacqueline
  */
-public abstract class Asteroid implements BendaAngkasa {
+public abstract class Sphere implements BendaAngkasa {
 	
 	protected char warna;
     protected int kecepatan;
     protected boolean isActive;
     protected int score;
 	
-	public Asteroid() {
+	public Sphere() {
 		//super();
 	}
 	
